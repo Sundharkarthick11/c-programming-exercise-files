@@ -1,0 +1,227 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: rgba(149, 215, 217,0.6);
+}
+/*----------------header------------------------------------------------------------*/
+header{
+    padding: 12px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: orange;
+    height: 120px;
+}
+
+header h1 {
+    font-size: 38px;
+    padding: 6px 0px 6px 0px;
+    animation: moveRight 3.5s ease-in-out infinite;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin:10px 0px 10px 0px;
+    text-align: center;
+    align-items: center;
+}
+@keyframes moveRight {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(0); 
+    }
+}
+/*----------------Nav bar---------------------------------------------------*/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav-bar a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    font-size:20px;
+    scroll-behavior: smooth;
+}
+.nav-bar a:hover{
+    color:rgba(0, 0, 0,0.8);
+}
+.scroll-down{
+    position: absolute;
+    display:none;
+    background-color: rgb(255, 247, 215);
+    right:9%;
+    top:6%;
+}
+.scroll-down a{
+    color: black;
+}
+.scroll-down a:hover{
+    color: rgba(255, 255, 255,0.9);
+    background-color: rgb(0, 0, 0);
+}
+/*----------------department------------------------------------------------------------*/
+
+.department-head{
+    font-size: 22px;
+    margin-left: 20px;
+}
+.content{
+    margin: 5px 32px;
+    padding: 10px;
+    display:flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.department{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width:190px;
+    height:170px;
+    background-color: rgb(255, 247, 215);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+}
+.department:hover a h2{
+    color: rgba(255, 255, 255,0.9);
+}
+.department:hover{
+    background-color: rgb(0, 0, 0);
+}
+.department a{
+    text-decoration: none;
+    color: black;
+}
+.department a h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.department i{
+    color: black;
+    font-size: 30px;
+}
+.department:hover i{
+    color: rgba(255, 255, 255,0.9);
+}
+
+/*----------------semesters------------------------------------------------------------*/
+.semester-header{
+    font-size: 22px;
+    margin-left: 20px;
+}
+.sem-content{
+    padding: 10px;
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    top:100px;
+}
+.semester{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 22%;
+    height:70px;
+    background-color:rgb(255, 247, 215);
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px;
+}
+.semester a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.semester:hover{
+    background-color: black;
+}
+.semester:hover h2{
+    color:rgba(255, 255, 255,0.9);
+}
+
+/*----------------syllabus-----------------------------------------------------------*/
+.Syllabus-header{
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+#syllabus{
+    margin: 0;
+}
+.syllabi-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 5px 42px;
+    
+}
+.syllabi-content table{
+    width: 55%;
+    border-collapse: collapse;
+    padding:10px;
+    text-align: center;
+    background-color: rgb(255, 247, 215);
+    
+}
+.syllabi-content table,tr,td,th{
+    border: 1px solid black;
+}
+.syllabi-content table th{
+    padding: 10px;
+}
+.syllabi-content table td i{
+    font-size: 22px;
+    color: black;
+}
+.syllabi-content table td:hover i{
+    color:blue
+}
+/*----------------footer-----------------------------------------------------------*/
+footer{
+    width:100%;
+    background-color: rgb(102, 7, 7);
+    overflow: hidden;
+    padding: 15px;
+    margin: 35px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+}
+.contact-info p a{
+    color: blue;
+    padding: 8px;
+    text-decoration: none;
+}
+.contact-info p a:hover{
+    text-decoration: underline;
+}
+
