@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: rgba(149, 215, 217,0.6);
+}
+/*-------------header-----------------------------------*/
+header{
+    padding: 12px 30px;
+    background-color: orange;
+    height: 120px;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.header h1 {
+    font-size: 38px;
+    padding: 6px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+header h2{
+    margin-top: 5px;
+    padding: 6px;
+}
+#Menubtn{
+    text-decoration: none;
+    border: none;
+    background-color: none;
+    font-size: 25px;
+}
+
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    width: 0px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+.sidenav a{
+    font-size: 22px;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.sidenav a:hover{
+    background-color: orange;
+    color: black;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 2px;
+}
+.sub-menu {
+    display: none;
+    flex-direction: column;
+    margin-left: 25px;
+    background-color: rgb(255, 247, 215);
+    
+}
+.sub-menu a {
+    font-size: 20px;
+    color: black;
+}
+span {
+    font-size: 30px;
+    cursor: pointer;
+}
+/*----------------Nav bar--------------------------------------------------*/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav-bar a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    font-size:20px;
+    scroll-behavior: smooth;
+}
+.nav-bar a:hover{
+    color:rgba(255, 255, 255, 0.8);
+}
+/*----------EEE-semester-content----------------------------------*/
+.all-sem-content{
+    width: 100%;
+    margin-left: 20px;
+}
+.all-sem-content h2{
+    font-size: 22px;
+    margin-left: 20px;
+}
+.subjects-container{
+    padding: 10px;
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    top:100px;
+}  
+.subjects{    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width:190px;
+    height:130px;
+    background-color: rgb(255, 247, 215);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px;
+    opacity: 0.8;
+}
+.subjects a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.subjects a h2{
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+}
+.subjects:hover{
+    background-size:150%;
+}
+.subjects a h2:hover{
+    opacity: 0.1;
+}
+/*----------------footer-----------------------------------------------------------*/
+footer{
+    width:100%;
+    background-color: rgb(162, 3, 3);
+    overflow: hidden;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin: 35px 0px 0px 0px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+}
+.contact-info p a{
+    color: rgb(0, 170, 255);
+    padding: 8px;
+    text-decoration: none;
+}
+.contact-info p a:hover{
+    text-decoration: underline;
+}
+
